@@ -1,0 +1,466 @@
+/* Reset for Margin */
+body {
+    margin: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    background-color: #35322e; /* Dark background color */
+    padding: 2px 10% 0 0; /* Padding at the top and right */
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 3; /* Ensure it appears above other elements */
+}
+
+/* White outline at the bottom */
+.navbar::after {
+    content: ""; /* Empty content for the pseudo-element */
+    display: block; /* Make it a block element */
+    height: 2px; /* Height of the outline */
+    background-color: #a4a4a4a3; /* Light grey color with transparency */
+    position: absolute; /* Position it absolutely within .navbar */
+    bottom: -2px; /* Place it just below the navbar */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+}
+
+/* Container for navigation icons */
+.navicons {
+    display: flex; /* Use flexbox for layout */
+    gap: 27px; /* Space between icons */
+    margin-left: 130px; /* Margin from the left */
+}
+
+/* Style for each navigation icon */
+.navicons img {
+    width: 38px; /* Set width */
+    height: 38px; /* Set height */
+    border-radius: 50%; /* Make icons circular */
+    background-color: rgb(255, 255, 255); /* White background */
+    padding: 3.8px; /* Padding around the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+    transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+/* Hover effect for navigation icons */
+.navicons img:hover {
+    transform: scale(1.2); /* Enlarge the icon */
+}
+
+/* Logo style */
+.logo {
+    position: absolute; /* Position it absolutely */
+    display: flex; /* Use flexbox for layout */
+    width: 90px; /* Set width */
+    height: 90px; /* Set height */
+    left: 748px; /* Position from the left */
+    bottom: 0px; /* Position from the bottom */
+    z-index: 4; /* Ensure it appears above other elements */
+}
+
+/* Navigation items container */
+.Nav_Item {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-left: 137px; /* Margin from the left */
+}
+
+/* Navigation items and links */
+.Nav_Item a {
+    color: rgb(255, 255, 255); /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 17px 20px; /* Padding for clickable area */
+    display: block; /* Block-level element */
+    font-size: 16.5px; /* Font size */
+    text-shadow: 2px 2px 4px black; /* Shadow for text */
+    font-family: Arial, sans-serif; /* Font family */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* Smooth transitions */
+    font-weight: normal; /* Normal font weight */
+}
+
+/* Hover effect for navigation items */
+.Nav_Item a:hover {
+    transform: scale(1.1); /* Slightly enlarge text */
+    font-weight: bold; /* Make text bold */
+    text-decoration: underline; /* Underline text */
+}
+
+/* Home section */
+.HOME {
+    position: relative; /* Positioned relative to its normal position */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Video background */
+#VidBG {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the container completely */
+}
+
+/* Image inside Home section */
+.HOME img {
+    position: absolute; /* Position absolutely within .HOME */
+    top: 48%; /* Positioned from the top */
+    left: 6%; /* Positioned from the left */
+    transform: translate(0, -50%); /* Center vertically */
+    z-index: 1; /* Ensure it appears below other elements */
+    height: 120%; /* Height larger than container */
+}
+
+/* Heading inside Home section */
+.HOME h1 {
+    position: absolute; /* Position absolutely within .HOME */
+    top: 38%; /* Positioned from the top */
+    left: 70%; /* Positioned from the left */
+    transform: translate(-50%, 0); /* Center horizontally */
+    z-index: 2; /* Ensure it appears above other elements */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    font-size: 50px; /* Font size */
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Hover effect for heading */
+.HOME h1:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Add white text shadow */
+}
+
+/* Paragraph inside Home section */
+.HOME p {
+    position: absolute; /* Position absolutely within .HOME */
+    top: 58%; /* Positioned from the top */
+    left: 480px; /* Positioned from the left */
+    transform: translate(-50%, 0); /* Center horizontally */
+    z-index: 2; /* Ensure it appears above other elements */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    font-size: 25px; /* Font size */
+    color: rgb(255, 255, 255); /* White text color */
+    text-align: right; /* Right-aligned text */
+}
+
+/* Hover effect for paragraph */
+.HOME p:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Add white text shadow */
+}
+
+/* About section */
+.ABOUT {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Positioned relative to its normal position */
+    height: 100vh; /* Full viewport height */
+    width: auto; /* Auto width */
+}
+
+/* Image inside About section */
+.ABOUT img {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 1; /* Ensure it appears below other elements */
+    top: 0; /* Align to the top */
+}
+
+/* About title */
+.ABOUT_TITLE {
+    text-decoration: none; /* Remove underline */
+    position: absolute; /* Position absolutely within .ABOUT */
+    top: 37px; /* Positioned from the top */
+    left: 54%; /* Positioned from the left */
+    transform: translate(-50%, 0); /* Center horizontally */
+    z-index: 2; /* Ensure it appears above other elements */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    font-size: 30px; /* Font size */
+    color: rgb(255, 255, 255); /* White text color */
+    border: 2px solid transparent; /* Transparent border */
+    padding: 5px; /* Padding around the text */
+    border-color: #ffffff; /* White border color */
+    border-left: 0px; /* Remove left border */
+    border-right: 0px; /* Remove right border */
+}
+
+/* Hover effect for About section heading */
+.ABOUT h2:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Add white text shadow */
+}
+
+/* Paragraph inside About section */
+.ABOUT p {
+    position: absolute; /* Position absolutely within .ABOUT */
+    top: 30.5%; /* Positioned from the top */
+    right: 205px; /* Positioned from the right */
+    z-index: 2; /* Ensure it appears above other elements */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    font-size: 30px; /* Font size */
+    color: rgba(0, 0, 0, 0.627); /* Semi-transparent black text color */
+    text-align: center; /* Center-aligned text */
+}
+
+/* Counter container */
+.COUNTER_CONTAINER {
+    position: absolute; /* Position absolutely */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out items evenly */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width */
+    bottom: 30%; /* Positioned from the bottom */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Individual counter box */
+.counter_box {
+    text-align: center; /* Center-aligned text */
+}
+
+/* Counter value */
+.counter {
+    font-size: 3em; /* Large font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Counter label */
+.label {
+    font-size: 1.2em; /* Font size */
+    color: #9f9f9f; /* Grey text color */
+}
+
+/* Title for Works section */
+.WORKS_TITLE {
+    font-size: 86px; /* Large font size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    justify-content: center; /* Center content horizontally */
+    position: absolute; /* Position absolutely within its container */
+    display: flex; /* Use flexbox for layout */
+    top: 180%; /* Positioned from the top */
+    padding-bottom: 3%; /* Bottom padding */
+    padding-top: 3%; /* Top padding */
+    background-color: #35322e; /* Dark background color */
+    width: 100vw; /* Full viewport width */
+    color: #ffffff; /* White text color */
+    transition: text-shadow 0.3s ease; /* Smooth transition for text shadow */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+/* Hover effect for Works section title */
+.WORKS_TITLE:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add white text shadow on hover */
+}
+
+/* Container for video and counter */
+.VID_COUNTER {
+    display: flex; /* Use flexbox for layout */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin-top: 116.5px; /* Margin from the top */
+}
+
+/* Container for individual video */
+.Vid_Box {
+    position: relative; /* Position relatively within its container */
+    flex: 1; /* Flexible width */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Video within Vid_Box */
+.Vid_Box video {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the container completely */
+}
+
+/* Overlay for video */
+.overlay {
+    position: absolute; /* Position absolutely within Vid_Box */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Play button within overlay */
+.overlay .play_button {
+    width: 50px; /* Width of play button */
+    height: 50px; /* Height of play button */
+}
+
+/* Title for video within overlay */
+.overlay .Vid_Title {
+    text-align: center; /* Center-align text */
+    position: absolute; /* Position absolutely within overlay */
+    bottom: 10px; /* Positioned from the bottom */
+    left: 50%; /* Positioned from the left */
+    transform: translateX(-50%); /* Center horizontally */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Hover effect for Vid_Box */
+.Vid_Box:hover .overlay {
+    opacity: 1; /* Make overlay visible on hover */
+}
+
+/* Hover effect for Vid_Title within overlay */
+.Vid_Box:hover .overlay .Vid_Title {
+    opacity: 1; /* Make Vid_Title visible on hover */
+}
+
+/* Button for projects */
+.projects_button {
+    font-weight: 1000; /* Bold font weight */
+    font-size: 14px; /* Font size */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block-level element */
+    width: 150px; /* Width of button */
+    padding-top: 10px; /* Padding at the top */
+    padding-bottom: 10px; /* Padding at the bottom */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center-align text */
+    border: 2.2px solid #6a6a6a; /* Border style */
+    border-radius: 5px; /* Border radius */
+    color: #939393cf; /* Semi-transparent grey text color */
+    margin-top: 50px; /* Margin from the top */
+    margin-left: 49%; /* Margin from the left */
+    margin-bottom: 5%; /* Margin from the bottom */
+}
+
+/* Hover effect for projects button */
+.projects_button:hover {
+    background-color: #9f9f9f87; /* Semi-transparent grey background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+/* Container for careers section */
+.CAREERS_CONTAINER a {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    font-size: 130px; /* Font size */
+    letter-spacing: -3px; /* Negative letter spacing */
+    color: #6a6a6a; /* Grey text color */
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-left: 12%; /* Margin from the left */
+    transition: font-size 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for font size and box shadow */
+    padding-left: 18px; /* Left padding */
+    padding-right: 20px; /* Right padding */
+    border-radius: 10%; /* Border radius */
+}
+
+/* Hover effect for careers section link */
+.CAREERS_CONTAINER a:hover {
+    font-size: 150px; /* Increase font size on hover */
+    box-shadow: 0 0 20px rgb(102, 102, 102); /* Add box shadow on hover */
+}
+
+/* Paragraph for careers section */
+.career_p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+    font-size: 27px; /* Font size */
+    color: rgba(0, 0, 0, 0.627); /* Semi-transparent black text color */
+    margin-left: 30%; /* Margin from the left */
+    margin-right: 150px; /* Margin from the right */
+    margin-bottom: 150px; /* Margin from the bottom */
+    padding: 6%; /* Padding */
+    border: #35322e solid 9.5px; /* Border style */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #000000; /* Background color of the footer */
+    color: #ffffff; /* Text color of the footer */
+    padding: 30px 0; /* Padding on top and bottom of the footer */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Full width of the footer */
+    position: relative; /* Position relative to its normal position */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    margin-left: auto; /* Center align horizontally */
+    margin-right: auto; /* Center align horizontally */
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Margin at the bottom of the footer section */
+}
+
+.contacts_list ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox layout for social icons */
+    justify-content: center; /* Center align icons horizontally */
+    align-items: center; /* Center align icons vertically */
+}
+
+.social-icons a {
+    display: inline-block; /* Display as inline block */
+    width: 38px; /* Set width of the social icon container */
+    height: 38px; /* Set height of the social icon container */
+    border-radius: 50%; /* Make the icon container circular */
+    background-color: #ffffff; /* Background color of the icon container */
+    padding: 3.8px; /* Padding inside the icon container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for the icon container */
+    transition: transform 0.3s ease; /* Smooth transition effect on transform */
+    margin: 0 5px; /* Margin between the icon containers */
+}
+
+.social-icons img {
+    width: 100%; /* Full width of the icon image */
+    height: 100%; /* Full height of the icon image */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Scale up the icon container on hover */
+}
+
+.divider {
+    border-top: 1px solid #ffffff; /* Top border for the divider */
+    margin: 20px auto; /* Margin around the divider */
+    width: 50%; /* Width of the divider */
+}
+
+.quick_links {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin from the list */
+    display: flex; /* Use flexbox layout for the quick links */
+    justify-content: center; /* Center align the quick links */
+}
+
+.quick_links li {
+    margin: 0 10px; /* Margin between the quick links */
+}
+
+.quick_links li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family for the quick links */
+    text-decoration: none; /* Remove underline from the links */
+    color: #ffffff; /* Text color of the links */
+    font-size: 16px; /* Initial font size */
+    transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Transition for font size and text shadow */
+}
+
+.quick_links li a:hover {
+    font-size: 18px; /* Increased font size on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Text shadow effect on hover */
+}
